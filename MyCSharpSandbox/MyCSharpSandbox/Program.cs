@@ -15,7 +15,8 @@ namespace MyCSharpSandbox
             Console.ReadLine();
 
             // Added another Comment
-
+            Console.WriteLine("And here comes a line that was added inside Github.com Editor");
+            Console.WriteLine("And this one was added in Visual Studio. Great.");
         }
     }
 }
