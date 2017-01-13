@@ -19,6 +19,7 @@ namespace MyCSharpSandbox
             Console.WriteLine("And this one was added in Visual Studio. Great.");
             // Some more Changes
             // And even more changes made in VS on DELL-XEON-2
+            // Some Changes made ONLINE - simultaneously with the changes at DELL-XEON-2
         }
     }
 }
