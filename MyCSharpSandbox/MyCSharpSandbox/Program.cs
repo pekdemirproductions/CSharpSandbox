@@ -18,6 +18,7 @@ namespace MyCSharpSandbox
             Console.WriteLine("And here comes a line that was added inside Github.com Editor");
             Console.WriteLine("And this one was added in Visual Studio. Great.");
             // Some more Changes
+            // Some Changes made ONLINE - simultaneously with the changes at DELL-XEON-2
         }
     }
 }
