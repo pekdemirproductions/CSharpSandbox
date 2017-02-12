@@ -14,6 +14,14 @@ namespace MyCSharpSandbox
 
             Intro("Welcome. Don't Panic!");
 
+            UseSubclassAs.Start();
+
+            #region Unused Stuff
+            // VirtualMemberTest.Start();
+            // AbstractClassTest.Start();
+
+            #endregion
+
             Outro("Goodbye.");
 
         }
