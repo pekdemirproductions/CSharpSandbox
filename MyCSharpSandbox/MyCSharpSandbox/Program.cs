@@ -12,14 +12,14 @@ namespace MyCSharpSandbox
         {
             // Cleaned up 2017-02-12
 
-            Intro("Welcome. Don't Panic!");
+            Intro("\nWelcome. Don't Panic!");
 
-            UseSubclassAs.Start();
+            InterfaceTest.Start();
 
             #region Unused Stuff
-            // VirtualMemberTest.Start();
+            // UseSubclassAs.Start();
             // AbstractClassTest.Start();
-
+            // VirtualMemberTest.Start();
             #endregion
 
             Outro("Goodbye.");
