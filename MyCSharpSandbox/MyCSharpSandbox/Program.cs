@@ -14,9 +14,10 @@ namespace MyCSharpSandbox
 
             Intro("\nWelcome. Don't Panic!");
 
-            InterfaceTest.Start();
 
             #region Unused Stuff
+            // BaseConstructorTest.Start();
+            // InterfaceTest.Start();
             // UseSubclassAs.Start();
             // AbstractClassTest.Start();
             // VirtualMemberTest.Start();

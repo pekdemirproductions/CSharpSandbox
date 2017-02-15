@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractClassTest.cs" />
+    <Compile Include="BaseConstructorTest.cs" />
     <Compile Include="InterfaceTest.cs" />
     <Compile Include="UseSubclassAs.cs" />
     <Compile Include="VirtualMemberTest.cs" />
