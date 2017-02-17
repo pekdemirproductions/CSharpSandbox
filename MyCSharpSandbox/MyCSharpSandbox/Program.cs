@@ -16,6 +16,8 @@ namespace MyCSharpSandbox
 
 
             #region Unused Stuff
+            IComparableTest.Start();
+
             // BaseConstructorTest.Start();
             // InterfaceTest.Start();
             // UseSubclassAs.Start();
@@ -24,6 +26,12 @@ namespace MyCSharpSandbox
             #endregion
 
             Outro("Goodbye.");
+
+            // Guter Tip am Rande:
+            //  In Visual Studio    [CTRL] + [J] = Intellisense Popup
+            //                      [CTRL] + [Space] = Intellisense Auto-Complete
+            //                      ( [CTRL] + [K] ) + ( [CTRL] + [C] ) = Zeile als Kommentar
+            //                      ( [CTRL] + [K] ) + ( [CTRL] + [U] ) = Kommentar-Zeichen entfernen
 
         }
 
