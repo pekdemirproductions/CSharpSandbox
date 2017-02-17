@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractClassTest.cs" />
+    <Compile Include="AnotherIComparableExercise.cs" />
     <Compile Include="BaseConstructorTest.cs" />
     <Compile Include="DasKomischeFragezeichen.cs" />
     <Compile Include="InterfaceTest.cs" />
@@ -54,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="IComparableTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
