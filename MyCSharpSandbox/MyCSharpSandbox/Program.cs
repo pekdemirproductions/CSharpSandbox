@@ -14,9 +14,10 @@ namespace MyCSharpSandbox
 
             Intro("\nWelcome. Don't Panic!");
 
-            AnotherIComparableExercise.Start();
+            EventsAndDelegates.Start();
 
             #region Unused Stuff
+            // AnotherIComparableExercise.Start();
             // IComparableTest.Start();
             // BaseConstructorTest.Start();
             // InterfaceTest.Start();
