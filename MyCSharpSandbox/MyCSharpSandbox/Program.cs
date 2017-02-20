@@ -13,6 +13,7 @@ namespace MyCSharpSandbox
             Intro("\nWelcome. Don't Panic!");
 
             HideBehindInterface.Start();
+            EventsAndDelegates.Start();
 
             #region Unused Stuff
             // AnotherIComparableExercise.Start();
