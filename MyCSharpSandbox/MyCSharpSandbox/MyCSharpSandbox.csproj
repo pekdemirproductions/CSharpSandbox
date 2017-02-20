@@ -46,6 +46,7 @@
     <Compile Include="AbstractClassTest.cs" />
     <Compile Include="AnotherIComparableExercise.cs" />
     <Compile Include="BaseConstructorTest.cs" />
+    <Compile Include="HideBehindInterface.cs" />
     <Compile Include="DasKomischeFragezeichen.cs" />
     <Compile Include="InterfaceTest.cs" />
     <Compile Include="UseSubclassAs.cs" />

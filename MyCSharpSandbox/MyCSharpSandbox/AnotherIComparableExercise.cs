@@ -13,20 +13,20 @@ namespace MyCSharpSandbox
             Spaceship GenericShip = new Spaceship();
             Spaceship Nostromo = new Spaceship("Nostromo", 15000, 6000000);
             Spaceship Betty = new Spaceship("Betty", 2000, 42000);
-            Spaceship MilMal = new Spaceship("Millenium Mallard", 3000, 20000000);
+            Spaceship MilMal = new Spaceship("M. Mallard", 3000, 20000000);
 
 
             List<Spaceship> myFleet = new List<Spaceship> { GenericShip, Nostromo, MilMal, Betty };
 
-            Console.WriteLine("Comparing by name ...");
+            Console.WriteLine("\nComparing by name ...");
             Spaceship.compareBy = 0;
             sortFleet(myFleet);
 
-            Console.WriteLine("Comparing by weight ...");
+            Console.WriteLine("\nComparing by weight ...");
             Spaceship.compareBy = 1;
             sortFleet(myFleet);
 
-            Console.WriteLine("Comparing by price ...");
+            Console.WriteLine("\nComparing by price ...");
             Spaceship.compareBy = 2;
             sortFleet(myFleet);
         }
@@ -68,17 +68,17 @@ namespace MyCSharpSandbox
                 {
                     if (leftSpaceship.weight == rightSpaceship.weight) { return 0; }
                     else
-                    if (leftSpaceship.weight > rightSpaceship.weight) { return -1; }
+                    if (leftSpaceship.weight < rightSpaceship.weight) { return -1; }
                     else
-                    if (leftSpaceship.weight < rightSpaceship.weight) { return 1; }
+                    if (leftSpaceship.weight > rightSpaceship.weight) { return 1; }
                 }
                 else if (compareBy == 2)    // Compare by price
                 {
                     if (leftSpaceship.price == rightSpaceship.price) { return 0; }
                     else
-                    if (leftSpaceship.price > rightSpaceship.price) { return -1; }
+                    if (leftSpaceship.price < rightSpaceship.price) { return -1; }
                     else
-                    if (leftSpaceship.price < rightSpaceship.price) { return 1; }
+                    if (leftSpaceship.price > rightSpaceship.price) { return 1; }
                 }
                 return -1;
             }

@@ -10,13 +10,12 @@ namespace MyCSharpSandbox
     {
         static void Main(string[] args)
         {
-            // Cleaned up 2017-02-12
-
             Intro("\nWelcome. Don't Panic!");
 
-            AnotherIComparableExercise.Start();
+            HideBehindInterface.Start();
 
             #region Unused Stuff
+            // AnotherIComparableExercise.Start();
             // IComparableTest.Start();
             // BaseConstructorTest.Start();
             // InterfaceTest.Start();
@@ -26,13 +25,6 @@ namespace MyCSharpSandbox
             #endregion
 
             Outro("Goodbye.");
-
-            // Guter Tip am Rande:
-            //  In Visual Studio    [CTRL] + [J] = Intellisense Popup
-            //                      [CTRL] + [Space] = Intellisense Auto-Complete
-            //                      ( [CTRL] + [K] ) + ( [CTRL] + [C] ) = Zeile als Kommentar
-            //                      ( [CTRL] + [K] ) + ( [CTRL] + [U] ) = Kommentar-Zeichen entfernen
-
         }
 
         public static void Intro(string message)
@@ -47,3 +39,9 @@ namespace MyCSharpSandbox
         }
     }
 }
+
+// Guter Tip am Rande:
+//  In Visual Studio    [CTRL] + [J] = Intellisense Popup
+//                      [CTRL] + [Space] = Intellisense Auto-Complete
+//                      ( [CTRL] + [K] ) + ( [CTRL] + [C] ) = Zeile als Kommentar
+//                      ( [CTRL] + [K] ) + ( [CTRL] + [U] ) = Kommentar-Zeichen entfernen
