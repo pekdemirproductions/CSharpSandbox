@@ -68,7 +68,6 @@ namespace MyCSharpSandbox
                 if (VideoEncodingPaused != null)
                     VideoEncodingPaused(this, new VideoEventArgs() { });
             }
-
         }
 
         public class Video
@@ -100,8 +99,5 @@ namespace MyCSharpSandbox
                 Console.WriteLine("Message-Service: Video encoding Paused! Sending a Message ...");
             }
         }
-
-
-
     }
 }
