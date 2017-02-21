@@ -12,9 +12,11 @@ namespace MyCSharpSandbox
         {
             Intro("\nWelcome. Don't Panic!");
 
-            Delegate_Revisited.Start();
 
             #region Unused Stuff
+
+            // YetAnotherDelegate.Start();
+            // Delegate_Revisited.Start();
             // EventsAndDelegates.Start();
             // HideBehindInterface.Start();
             // AnotherIComparableExercise.Start();

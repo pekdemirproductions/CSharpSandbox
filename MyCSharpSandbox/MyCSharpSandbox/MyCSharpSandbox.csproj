@@ -43,23 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractClassTest.cs" />
-    <Compile Include="AnotherIComparableExercise.cs" />
-    <Compile Include="BaseConstructorTest.cs" />
-    <Compile Include="Delegate_Revisited.cs" />
-    <Compile Include="HideBehindInterface.cs" />
-    <Compile Include="DasKomischeFragezeichen.cs" />
-    <Compile Include="EventsAndDelegates.cs" />
-    <Compile Include="InterfaceTest.cs" />
-    <Compile Include="UseSubclassAs.cs" />
-    <Compile Include="VirtualMemberTest.cs" />
+    <Compile Include="ClassesAndConstructors\AbstractClassTest.cs" />
+    <Compile Include="Interface\AnotherIComparableExercise.cs" />
+    <Compile Include="ClassesAndConstructors\BaseConstructorTest.cs" />
+    <Compile Include="DelegatesAndEvents\Delegate_Revisited.cs" />
+    <Compile Include="Interface\HideBehindInterface.cs" />
+    <Compile Include="UsefulStuff\DasKomischeFragezeichen.cs" />
+    <Compile Include="DelegatesAndEvents\EventsAndDelegates.cs" />
+    <Compile Include="Interface\InterfaceTest.cs" />
+    <Compile Include="ClassesAndConstructors\UseSubclassAs.cs" />
+    <Compile Include="ClassesAndConstructors\VirtualMemberTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DelegatesAndEvents\YetAnotherDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <Compile Include="IComparableTest.cs" />
+    <Compile Include="Interface\IComparableTest.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
