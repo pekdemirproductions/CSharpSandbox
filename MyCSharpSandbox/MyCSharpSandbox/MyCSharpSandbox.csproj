@@ -44,10 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassesAndConstructors\AbstractClassTest.cs" />
+    <Compile Include="DelegatesAndEvents\EventHandlerExercise.cs" />
     <Compile Include="Interface\AnotherIComparableExercise.cs" />
     <Compile Include="ClassesAndConstructors\BaseConstructorTest.cs" />
     <Compile Include="DelegatesAndEvents\Delegate_Revisited.cs" />
     <Compile Include="Interface\HideBehindInterface.cs" />
+    <Compile Include="DelegatesAndEvents\SimpleDelegate.cs" />
+    <Compile Include="UsefulStuff\RandomTimeBased.cs" />
     <Compile Include="UsefulStuff\DasKomischeFragezeichen.cs" />
     <Compile Include="DelegatesAndEvents\EventsAndDelegates.cs" />
     <Compile Include="Interface\InterfaceTest.cs" />
