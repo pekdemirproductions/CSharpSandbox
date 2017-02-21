@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ClassesAndConstructors\AbstractClassTest.cs" />
     <Compile Include="DelegatesAndEvents\EventHandlerExercise.cs" />
+    <Compile Include="UsefulStuff\UsingStaticMynamespaceMyclass.cs" />
     <Compile Include="Interface\AnotherIComparableExercise.cs" />
     <Compile Include="ClassesAndConstructors\BaseConstructorTest.cs" />
     <Compile Include="DelegatesAndEvents\Delegate_Revisited.cs" />

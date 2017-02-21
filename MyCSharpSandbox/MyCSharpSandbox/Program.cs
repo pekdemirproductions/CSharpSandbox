@@ -15,7 +15,7 @@ namespace MyCSharpSandbox
             EventHandlerExercise.Start();
 
             #region Unused Stuff
-            
+
             // SimpleDelegate.Start();
             // YetAnotherDelegate.Start();
             // Delegate_Revisited.Start();
@@ -47,7 +47,7 @@ namespace MyCSharpSandbox
 }
 
 // Guter Tip am Rande:
-//  In Visual Studio    [CTRL] + [J] = Intellisense Popup
-//                      [CTRL] + [Space] = Intellisense Auto-Complete
-//                      ( [CTRL] + [K] ) + ( [CTRL] + [C] ) = Zeile als Kommentar
-//                      ( [CTRL] + [K] ) + ( [CTRL] + [U] ) = Kommentar-Zeichen entfernen
+//  In Visual Studio    [CTRL]+[J]                  = Intellisense Popup
+//                      [CTRL]+[Space]              = Intellisense Auto-Complete
+//                      [CTRL]+[K] => [CTRL]+[C]    = Zeile als Kommentar
+//                      [CTRL]+[K] => [CTRL]+[U]    = Kommentar-Zeichen entfernen

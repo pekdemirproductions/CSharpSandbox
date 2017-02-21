@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace MyCSharpSandbox
 {
-    class RandomTimeBased
+    public class RandomTimeBased
     {
         public static void Start()
         {
