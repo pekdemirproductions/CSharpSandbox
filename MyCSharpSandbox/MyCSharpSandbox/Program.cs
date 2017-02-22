@@ -13,10 +13,11 @@ namespace MyCSharpSandbox
         {
             Intro("\nWelcome. Don't Panic!");
 
-            EventHandlerV4.Start();
+            EventHandlerV5.Start();
 
             #region Unused Stuff
 
+            // EventHandlerV4.Start();
             // EventHandlerOnceMore.Start();
             // OverloadingOperators.Start();
             // EventHandlerExercise.Start();

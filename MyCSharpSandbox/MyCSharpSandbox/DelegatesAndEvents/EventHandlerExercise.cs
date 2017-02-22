@@ -12,13 +12,11 @@ namespace MyCSharpSandbox
     {
         public static void Start()
         {
-
             MissionControl MCAlpha = new MissionControl();
             AirForce AirForceAlpha = new AirForce();
+
             MCAlpha.EnemySpotted += AirForceAlpha.AirForceEnemyHandler;
-
             MCAlpha.ControlTowerStart();
-
         }
 
         public class MissionControlEventArgs : EventArgs
