@@ -45,7 +45,8 @@
   <ItemGroup>
     <Compile Include="ClassesAndConstructors\AbstractClassTest.cs" />
     <Compile Include="DelegatesAndEvents\EventHandlerExercise.cs" />
-    <Compile Include="EventHandlerOnceMore.cs" />
+    <Compile Include="DelegatesAndEvents\EventHandlerOnceMore.cs" />
+    <Compile Include="EventHandlerV4.cs" />
     <Compile Include="UsefulStuff\OverloadingOperators.cs" />
     <Compile Include="UsefulStuff\UsingStaticMynamespaceMyclass.cs" />
     <Compile Include="Interface\AnotherIComparableExercise.cs" />

@@ -50,7 +50,7 @@ namespace MyCSharpSandbox
             protected virtual string onDroneArrivedAtTarget(object o, DroneEventArgs args)
             {
                 if (TargetReached != null)
-                    TargetReached(this, args);
+                    TargetReached(o, args);
                 return string.Format("LAST GPS POSITION: {0} / NEW GPS POSITION {1}",
                     currentGpsPosition, targetGpsPosition);
             }
