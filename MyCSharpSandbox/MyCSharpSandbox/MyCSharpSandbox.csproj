@@ -48,6 +48,7 @@
     <Compile Include="DelegatesAndEvents\EventHandlerOnceMore.cs" />
     <Compile Include="DelegatesAndEvents\EventHandlerV4.cs" />
     <Compile Include="DelegatesAndEvents\EventHandlerV5.cs" />
+    <Compile Include="DelegateV5.cs" />
     <Compile Include="UsefulStuff\OverloadingOperators.cs" />
     <Compile Include="UsefulStuff\UsingStaticMynamespaceMyclass.cs" />
     <Compile Include="Interface\AnotherIComparableExercise.cs" />
