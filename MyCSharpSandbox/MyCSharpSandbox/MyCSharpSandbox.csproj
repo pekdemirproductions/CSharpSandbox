@@ -43,12 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ThreadingExtendedJoin.cs" />
+    <Compile Include="UsefulStuff\AufrufendeKlasseAnzeigen.cs" />
+    <Compile Include="ThreadingExtended.cs" />
     <Compile Include="ClassesAndConstructors\AbstractClassTest.cs" />
     <Compile Include="DelegatesAndEvents\EventHandlerExercise.cs" />
     <Compile Include="DelegatesAndEvents\EventHandlerOnceMore.cs" />
     <Compile Include="DelegatesAndEvents\EventHandlerV4.cs" />
     <Compile Include="DelegatesAndEvents\EventHandlerV5.cs" />
-    <Compile Include="DelegateV5.cs" />
+    <Compile Include="DelegatesAndEvents\FinalDelegate.cs" />
+    <Compile Include="DelegatesAndEvents\LambdaSimpleExamples.cs" />
+    <Compile Include="DelegatesAndEvents\DelegateV5.cs" />
+    <Compile Include="Threading\ThreadBasics.cs" />
     <Compile Include="UsefulStuff\OverloadingOperators.cs" />
     <Compile Include="UsefulStuff\UsingStaticMynamespaceMyclass.cs" />
     <Compile Include="Interface\AnotherIComparableExercise.cs" />
