@@ -15,35 +15,9 @@ namespace MyCSharpSandbox
         {
             Intro("\nWelcome. Don't Panic!");
 
-            ThreadingExtendedJoin.Start();
+            InterfaceTest.Start();
 
             #region Unused Stuff
-
-            // *** Threading & Asynchronous Programming ***
-            // ThreadingExtended.Start();
-            // ThreadBasics.Start();
-
-            // *** Delegates & Events ***
-            // FinalDelegate.Start();
-            // LambdaSimpleExamples.Start();
-            // DelegateV5.Start();
-            // EventHandlerV5.Start();
-            // EventHandlerV4.Start();
-            // EventHandlerOnceMore.Start();
-            // EventHandlerExercise.Start();
-            // SimpleDelegate.Start();
-            // YetAnotherDelegate.Start();
-            // Delegate_Revisited.Start();
-            // EventsAndDelegates.Start();
-
-            // *** Interfaces ***
-            // HideBehindInterface.Start();
-            // AnotherIComparableExercise.Start();
-            // IComparableTest.Start();
-            // InterfaceTest.Start();
-
-            // *** Classes and Constructors
-            // BaseConstructorTest.Start();
             // UseSubclassAs.Start();
             // AbstractClassTest.Start();
             // VirtualMemberTest.Start();
