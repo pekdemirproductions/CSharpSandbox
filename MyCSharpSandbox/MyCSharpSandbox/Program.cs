@@ -23,6 +23,8 @@ namespace MyCSharpSandbox
             // ThreadingExtended.Start();
             // ThreadBasics.Start();
 
+            // TEST AUF ASPIRE SWITCH
+
             // *** Delegates & Events ***
             // FinalDelegate.Start();
             // LambdaSimpleExamples.Start();
