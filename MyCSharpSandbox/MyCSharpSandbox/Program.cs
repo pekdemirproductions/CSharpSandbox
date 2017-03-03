@@ -24,6 +24,7 @@ namespace MyCSharpSandbox
             // ThreadBasics.Start();
 
             // TEST AUF DELL-XEON-2
+            // TEST AUF ASPIRE SWITCH
 
             // *** Delegates & Events ***
             // FinalDelegate.Start();
