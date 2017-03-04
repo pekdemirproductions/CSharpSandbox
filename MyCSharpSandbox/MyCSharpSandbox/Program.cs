@@ -13,7 +13,7 @@ namespace MyCSharpSandbox
     {
         static void Main(string[] args)
         {
-            Intro("\nWelcome. Don't Panic!");
+            Intro("Welcome. Don't Panic!");
 
             ThreadingExtendedJoin.Start();
 
@@ -57,18 +57,36 @@ namespace MyCSharpSandbox
             // AufrufendeKlasseAnzeigen.Start();
             #endregion
 
-            Outro("Goodbye.");
+            Outro("Goodbye. You are now leaving this awesome application ...");
         }
 
-        public static void Intro(string message)
+        static void Intro(string message)
         {
-            Console.WriteLine(message + "\n");
+            string myOrigin = MethodBase.GetCurrentMethod().DeclaringType.ToString();
+            int numberOfChars = message.Length;
+            Console.WriteLine($"MSG FROM: {myOrigin}");
+            LineFitted(message.Length);
+            Console.WriteLine(message);
+            LineFitted(message.Length);
+            Console.Write("\n");
         }
-        public static void Outro(string message)
+
+        static void Outro(string message)
         {
-            Console.WriteLine("\n\n" + message + "\n");
-            Console.WriteLine("(Press Enter to terminate program.)");
+            int numberOfChars = message.Length;
+
+            Console.WriteLine("\n");
+            LineFitted(message.Length);
+            Console.WriteLine(message);
+            LineFitted(message.Length);
+
             Console.ReadLine();
+        }
+
+        static void LineFitted(int curLength)
+        {
+            for (int i = 0; i < curLength; i++) { Console.Write("-"); }
+            Console.Write("\n");
         }
     }
 }

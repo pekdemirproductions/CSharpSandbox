@@ -14,7 +14,9 @@ namespace MyCSharpSandbox
         public static void Start()
         {
             Console.WriteLine("Diese Meldung kommt aus der Klasse:");
-            Console.WriteLine(MethodBase.GetCurrentMethod().DeclaringType);
+
+            Console.WriteLine(MethodBase.GetCurrentMethod().DeclaringType); //  <====== Das Filet
+
             Console.WriteLine("\n\nAusgabe der aufrufenden Klasse erfolgt durch folgendes Kommando:");
             Console.WriteLine("Console.WriteLine(MethodBase.GetCurrentMethod().DeclaringType);");
             Console.WriteLine("\nWichtig: using System.Reflection; muss ebenfalls vorhanden sein!\n");
