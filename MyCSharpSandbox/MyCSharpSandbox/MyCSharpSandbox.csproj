@@ -43,9 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ThreadingExtendedJoin.cs" />
+    <Compile Include="DelegatesAndEvents\_Anonymous_Method_Final.cs" />
+    <Compile Include="DelegatesAndEvents\_Lambda_Statement_2Args_Final.cs" />
+    <Compile Include="DelegatesAndEvents\_Lambda_Statement_Final.cs" />
+    <Compile Include="DelegatesAndEvents\_Delegate_Simple_Final.cs" />
+    <Compile Include="EventHandler_Final.cs" />
+    <Compile Include="Threading\ThreadingExtendedJoin.cs" />
+    <Compile Include="ThreadTest.cs" />
     <Compile Include="UsefulStuff\AufrufendeKlasseAnzeigen.cs" />
-    <Compile Include="ThreadingExtended.cs" />
+    <Compile Include="Threading\ThreadingExtended.cs" />
     <Compile Include="ClassesAndConstructors\AbstractClassTest.cs" />
     <Compile Include="DelegatesAndEvents\EventHandlerExercise.cs" />
     <Compile Include="DelegatesAndEvents\EventHandlerOnceMore.cs" />

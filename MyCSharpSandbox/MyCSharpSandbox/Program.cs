@@ -15,18 +15,24 @@ namespace MyCSharpSandbox
         {
             Intro("Welcome. Don't Panic!");
 
-            ThreadingExtendedJoin.Start();
+            EventHandler_Final.Start();
+
+            // Console.ReadLine();
+            Outro("Goodbye. You are now leaving this awesome application ...");
 
             #region Unused Stuff
 
             // *** Threading & Asynchronous Programming ***
+            // ThreadTest.Start();
+            // ThreadingExtendedJoin.Start();
             // ThreadingExtended.Start();
             // ThreadBasics.Start();
 
-            // TEST AUF DELL-XEON-2
-            // TEST AUF ASPIRE SWITCH
-
-            // *** Delegates & Events ***
+            // *** Delegates, Lambdas & Events ***
+            // _Lambda_Statement_2Args_Final.Start();
+            // _Lambda_Statement_Final.Start();
+            // _Delegate_Simple_Final.Start();
+            // _Anonymous_Method_Final.Start();
             // FinalDelegate.Start();
             // LambdaSimpleExamples.Start();
             // DelegateV5.Start();
@@ -56,8 +62,6 @@ namespace MyCSharpSandbox
             // RandomTimeBased.Start();
             // AufrufendeKlasseAnzeigen.Start();
             #endregion
-
-            Outro("Goodbye. You are now leaving this awesome application ...");
         }
 
         static void Intro(string message)
@@ -70,7 +74,6 @@ namespace MyCSharpSandbox
             LineFitted(message.Length);
             Console.Write("\n");
         }
-
         static void Outro(string message)
         {
             int numberOfChars = message.Length;
@@ -82,7 +85,6 @@ namespace MyCSharpSandbox
 
             Console.ReadLine();
         }
-
         static void LineFitted(int curLength)
         {
             for (int i = 0; i < curLength; i++) { Console.Write("-"); }
