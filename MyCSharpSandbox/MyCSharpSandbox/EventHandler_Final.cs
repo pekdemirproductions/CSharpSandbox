@@ -14,8 +14,11 @@ namespace MyCSharpSandbox
         public static void Start()
         {
 
+            Artist XXX = new Artist();
             Artist Marvin = new Artist("Marvin");
             Artist Arnold = new Artist("Arnold");
+
+            Console.WriteLine("XXX name: "+XXX.name);
 
         }
 
@@ -29,11 +32,17 @@ namespace MyCSharpSandbox
             public delegate int ArtistsEventHandler(object o, EventArgs a);
             public event ArtistsEventHandler ReceiveOscar;
 
-            public string name { get; set; } = "Default";
+            public string name { get; private set; }
             
+            public Artist()
+            {
+                // Do Nothing
+                name = "Default";
+            }
+
             public Artist(string newName)
             {
-
+                name = newName;
             }
 
 
