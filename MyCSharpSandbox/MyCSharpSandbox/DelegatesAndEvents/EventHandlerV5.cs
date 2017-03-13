@@ -41,7 +41,9 @@ namespace MyCSharpSandbox
 
             public Satellite(string newName) { name = newName; }
             public delegate string SatelliteEventHandler(object o, SatelliteEventArgs args);
-            public event SatelliteEventHandler NewPositionReached;                                          // Define the Event
+
+            // Define the Event:
+            public event SatelliteEventHandler NewPositionReached;
 
             public void MoveToNewPosition(string newPosition)
             {
@@ -49,7 +51,9 @@ namespace MyCSharpSandbox
                     this.name, currentPosition, newPosition);
                 int currentTravelTime = GetRandomNumber(1000, 3000);
                 Thread.Sleep(currentTravelTime);
-                onNewPositionReached(this, new SatelliteEventArgs { satelliteName = this.name, coordinates = this.currentPosition, travelTime = currentTravelTime });   // Raise the Event
+
+                // Raise the Event:
+                onNewPositionReached(this, new SatelliteEventArgs { satelliteName = this.name, coordinates = this.currentPosition, travelTime = currentTravelTime });
             }
 
             protected virtual string onNewPositionReached(object o, SatelliteEventArgs args)                                               // Extension Point
@@ -57,7 +61,8 @@ namespace MyCSharpSandbox
                 string currentFullMessage;
                 if (NewPositionReached != null)
                 {
-                    currentFullMessage = string.Format("Satellite: {0} (old Position: {1}) successfully moved to Position: {2}. Travel Time was: {3}",
+                    currentFullMessage = string.Format(
+                        "Satellite: {0} (old Position: {1}) successfully moved to Position: {2}. Travel Time was: {3}",
                         args.satelliteName, this.currentPosition, args.coordinates, args.travelTime);
                     currentPosition = args.coordinates;
                     args.fullMessage = currentFullMessage;

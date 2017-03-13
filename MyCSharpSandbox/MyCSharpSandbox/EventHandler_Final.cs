@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace MyCSharpSandbox
 {
@@ -32,6 +33,11 @@ namespace MyCSharpSandbox
             public delegate int ArtistsEventHandler(object o, EventArgs a);
             public event ArtistsEventHandler ReceiveOscar;
 
+            public class ArtistEventArgs : EventArgs
+            {
+                public string ArtistMessage;
+            }
+
             public string name { get; private set; }
             
             public Artist()
@@ -43,6 +49,20 @@ namespace MyCSharpSandbox
             public Artist(string newName)
             {
                 name = newName;
+            }
+
+            public void WorkOnOscar()
+            {
+                Thread.Sleep(5000);
+                EventArgs EA = new EventArgs();
+                
+                // Raise the event:
+                OnOscarWon(this, EA);
+            }
+
+            protected virtual string OnOscarWon (object o, EventArgs EA)
+            {
+
             }
 
 

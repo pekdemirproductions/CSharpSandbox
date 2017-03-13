@@ -69,7 +69,9 @@ namespace MyCSharpSandbox
 
             public string DecodeMessagesFromSubmarines(object o, SubmarineEventArgs args)
             {
-                string returnMessage = string.Format("{0} INTERCOM MESSAGE: Submarine {1} reached new position in {2} Seconds.", this.name, args.nameOfSubmarine, args.timePassed);
+                string returnMessage = string.Format(
+                    "{0} INTERCOM MESSAGE: Submarine {1} reached new position in {2} Seconds.", 
+                    this.name, args.nameOfSubmarine, args.timePassed);
                 Console.WriteLine(returnMessage);
                 return returnMessage;
             }
