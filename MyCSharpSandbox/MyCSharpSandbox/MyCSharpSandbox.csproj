@@ -47,6 +47,7 @@
     <Compile Include="DelegatesAndEvents\_Lambda_Statement_2Args_Final.cs" />
     <Compile Include="DelegatesAndEvents\_Lambda_Statement_Final.cs" />
     <Compile Include="DelegatesAndEvents\_Delegate_Simple_Final.cs" />
+    <Compile Include="EventHandlerGroundhogDay.cs" />
     <Compile Include="EventHandler_Final.cs" />
     <Compile Include="Threading\ThreadingExtendedJoin.cs" />
     <Compile Include="ThreadTest.cs" />

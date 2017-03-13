@@ -26,7 +26,6 @@ namespace MyCSharpSandbox
             DroneControlAlpha.TargetReached += DroneTerminalGamma.OutputDroneMessage;
 
             DroneControlAlpha.MoveDrone("100;59;44");
-
         }
 
         public class DroneControl

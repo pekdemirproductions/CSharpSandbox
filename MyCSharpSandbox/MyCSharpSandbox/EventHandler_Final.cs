@@ -7,67 +7,68 @@ using System.Threading;
 
 namespace MyCSharpSandbox
 {
-    // BAUSTELLE!!!
-
     class EventHandler_Final
     {
+        public class ArtistEventArgs : EventArgs
+        { public string ArtistMessage; }
 
         public static void Start()
         {
+            // ============= Artist Creation =============
+            Artist DiCaprio = new Artist("Leonardo DiCaprio");
+            Artist DeNiro = new Artist("Robert De Niro");
 
-            Artist XXX = new Artist();
-            Artist Marvin = new Artist("Marvin");
-            Artist Arnold = new Artist("Arnold");
+            // ============= PUBLISHER =============
+            Reporter LATimes = new Reporter("L.A. Times");
 
-            Console.WriteLine("XXX name: "+XXX.name);
+            // ============= Event-Registration =============
+            DiCaprio.ReceiveOscar += LATimes.PublishNews;
+            DeNiro.ReceiveOscar += LATimes.PublishNews;
 
-        }
-
-        public static int TestMethod(string testString)
-        {
-            return 42;
+            // ============= Make Artists Work =============
+            DiCaprio.WorkOnOscar();
+            DeNiro.WorkOnOscar();
         }
 
         public class Artist
         {
-            public delegate int ArtistsEventHandler(object o, EventArgs a);
+            // ============= Create Delegate & Event Handler =============
+            public delegate void ArtistsEventHandler(object o, ArtistEventArgs a);
             public event ArtistsEventHandler ReceiveOscar;
 
-            public class ArtistEventArgs : EventArgs
-            {
-                public string ArtistMessage;
-            }
-
             public string name { get; private set; }
-            
-            public Artist()
-            {
-                // Do Nothing
-                name = "Default";
-            }
+            public Artist() { name = "Default"; }
+            public Artist(string newName) { name = newName; }
 
-            public Artist(string newName)
-            {
-                name = newName;
-            }
-
+            // ============= WORKHORSE METHOD =============
             public void WorkOnOscar()
             {
-                Thread.Sleep(5000);
-                EventArgs EA = new EventArgs();
-                
-                // Raise the event:
+                Thread.Sleep(1000);
+                ArtistEventArgs EA = new ArtistEventArgs();
+
+                // ============= RAISE EVENT =============
                 OnOscarWon(this, EA);
             }
 
-            protected virtual string OnOscarWon (object o, EventArgs EA)
+            protected virtual void OnOscarWon(object o, ArtistEventArgs EA)
             {
-
+                if (ReceiveOscar != null)
+                    EA.ArtistMessage = string.Format($"Oscar won by {this.name}!");
+                // ============= FIRE EVENT =============
+                ReceiveOscar(this, EA);
             }
-
-
         }
 
+        public class Reporter
+        {
+            public string name { get; set; }
 
+            public Reporter(string newName) { name = newName; }
+
+            public void PublishNews(object o, ArtistEventArgs AEA)
+            {
+                Console.WriteLine(AEA.ArtistMessage);
+            }
+        }
     }
 }

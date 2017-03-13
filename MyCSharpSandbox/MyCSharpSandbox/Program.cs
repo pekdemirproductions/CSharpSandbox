@@ -15,9 +15,8 @@ namespace MyCSharpSandbox
         {
             Intro("Welcome. Don't Panic!");
 
-            EventHandler_Final.Start();
+            EventHandlerGroundhogDay.Start();
 
-            // Console.ReadLine();
             Outro("Goodbye. You are now leaving this awesome application ...");
 
             #region Unused Stuff
@@ -29,6 +28,7 @@ namespace MyCSharpSandbox
             // ThreadBasics.Start();
 
             // *** Delegates, Lambdas & Events ***
+            // EventHandler_Final.Start();
             // _Lambda_Statement_2Args_Final.Start();
             // _Lambda_Statement_Final.Start();
             // _Delegate_Simple_Final.Start();
