@@ -15,7 +15,9 @@ namespace MyCSharpSandbox
         {
             Intro("Welcome. Don't Panic!");
 
-            EventHandlerGroundhogDay.Start();
+            Basics.Bedingungsoperatoren.Start();
+            // EventHandlerGroundhogDay.Start();
+
 
             Outro("Goodbye. You are now leaving this awesome application ...");
 

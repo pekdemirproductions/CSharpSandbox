@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Basics\Bedingungsoperatoren.cs" />
     <Compile Include="DelegatesAndEvents\_Anonymous_Method_Final.cs" />
     <Compile Include="DelegatesAndEvents\_Lambda_Statement_2Args_Final.cs" />
     <Compile Include="DelegatesAndEvents\_Lambda_Statement_Final.cs" />
